@@ -1,0 +1,203 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    }
+    .container{
+        width: 100%;
+        min-height: 100vh;
+        background-image:linear-gradient(rgba(238, 151, 151, 0.75), rgba(63, 29, 141, 0.75)), url(imgH/p1.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        image-resolution: 100%;
+    }
+    .row{
+        width: 100%;
+        padding: 0px 80px;
+    }
+    nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0px;
+        position: relative;
+        z-index: 1;
+    }
+    nav ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+    nav ul li{
+        list-style: none;
+        padding: 0px 5px;
+    }
+    nav ul li a{
+        padding: 10px 18px;
+        border-radius: 5px;
+        font-family: sans-serif;
+        font-size: 16px;
+        color: #fff;
+        text-decoration: none;
+    }
+    nav ul li a:hover{
+        background-color: orange;
+    }
+    nav ul li .active{
+        background-color: orange;
+    }
+    nav h1{
+        font-size: 35px;
+        color: #fff;
+        font-weight: 600px;
+        text-transform: uppercase;
+        margin-top: 10px;
+    }
+    .content{
+        width: 100%;
+        min-height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .content h1{
+        font-size: 75px;
+        color: #fff;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+    }
+    .content p{
+        font-size: 19px;
+        color: #030000;
+        margin: 10px 0px;
+        font-weight: 900;
+    }
+    .content a{
+        text-decoration: none;
+        font-size: 19px;
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: orange;
+        border-radius: 5px;
+        color: #fff;
+        letter-spacing: 2px;
+        margin-top: 20px;
+    }
+    .content a:hover{
+    background-color: #727cf0;
+    transition:0.3s;
+    }
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    #all-cards{
+        background-color: #f0f0f0;
+        display:grid;
+        grid-template-columns:3fr 3fr 3fr 3fr;
+    }
+    #cards-container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 100px;
+    }
+    #card{
+        width: 325px;
+        background-color: #f0f0f0;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0px 2px 4px rgba(0,0,0,0,2);
+        margin: 20px;
+        transition: transform 0.6s ease;
+    }
+    #card:hover{
+        transform: translateY(-20px);
+    }
+    #cards-image{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    #cards-content{
+        padding: 16px;
+    }
+    #cards-name{
+        font-size: 28px;
+        margin-bottom: 8px;
+    }
+    #cards-friends{
+        color: #666;
+        font-size: 15px;
+        line-height: 1.3;
+    }
+    .btn{
+        display: inline-block;
+        padding: 8px 16px;
+        background-color: #333;
+        text-decoration: none;
+        border-radius: 4px;
+        margin-top: 16px;
+        color: #fff;
+    }
+    #back{
+        background-color: #37475A;
+        color:#fff;
+        text-align:center;
+        font-weight:bold; /*900,or700*/
+        font-family:arial; /*fall back is when there are multiple font fammily so that any of them can display depending on your browser*/
+    font-size:20px;
+    padding:25px;
+    cursor:pointer;
+    transition:0.5s ease all;
+    }
+    footer{
+    color:white;
+    display:grid;
+    grid-template-columns:3fr 3fr 3fr 3fr;
+    background-color:#232F2E;
+    padding:8px;
+    height:500px;
+    transition:3s ease all;
+    width: 100%;
+    height: 100vh;
+    background: url('image1/pic5.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: animateBg 5s linear infinite;
+    }
+    footer:hover, footer:focus{
+    color:white;
+    display:grid;
+    grid-template-columns:3fr 3fr 3fr 3fr;
+    background-color:grey;
+    padding:8px;
+    height:500px;
+    transition:3s ease all;
+    }
+    ul{
+    list-style-type:none;
+    }
+    ul li:hover, ul li:focus{
+    color:white;
+    font-size:14px;
+    font-family:arial;
+    margin-left:-39px;
+    transition:0.5s ease all;
+    }
+    @keyframes animateBg {
+        100%{
+            filter: hue-rotate(360deg);
+        }
+    }
